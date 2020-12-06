@@ -10,7 +10,7 @@ def whole():
     import pulp
     
     # variables declared for week and year number for reuse throughout code
-    week_num = 1
+    week_num = 13
     year_num = 20
     
     #################################### Setup ####################################
@@ -227,7 +227,7 @@ def whole():
             df = df.drop(columns = "Temp")
             
         # rounds the projected points to the 2nd decimal place
-        df["Projected"] = round(df["Projected"], 2)
+        df["Projected"] = round(df["Projected"], 3)
         
         # returns DataFrame with added projected points column
         return df
@@ -716,7 +716,7 @@ def whole():
         
         # rounds the projection column for total to the second decimal place
         lineupDF.at["Total", "Projected Points"] = round(lineupDF.at[
-            "Total","Projected Points"], 2)
+            "Total","Projected Points"], 3)
         
         # the final lineup is returned
         return lineupDF
