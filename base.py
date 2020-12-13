@@ -10,7 +10,7 @@ def whole():
     import pulp
     
     # variables declared for week and year number for reuse throughout code
-    week_num = 13
+    week_num = 14
     year_num = 20
     
     #################################### Setup ####################################
@@ -21,8 +21,7 @@ def whole():
     # reads in csv of salaries and transfers data to DataFrame
     def create_salaries_df(df):
         # creates file path
-        file = (r"C:\Users\ben_m\OneDrive\Documents\NFL\\" + str(year_num) + "-"
-                + str(year_num + 1) + "CSVs\\" + str(year_num) + "-"
+        file = (r"C:/home/ben_m//" + str(year_num) + "-"
                 + str(year_num + 1) + "Week" + str(week_num) + "FD.csv")
         
         # creates table of file path data
