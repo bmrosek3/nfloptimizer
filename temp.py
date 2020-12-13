@@ -7,7 +7,7 @@ from base import whole
 # creates a title and body text for the gui
 title = st.title("Summit Lineups")
 body1 = st.text("This is not a guaranteed way to make money and you may lose.")
-body2 = st.text("However, we haven't lost yet.")
+body2 = st.text("However, we haven't lost money yet.")
 
 # adds user input boxes for username and password
 username = st.text_area("Username")
@@ -27,6 +27,7 @@ valid_logins = {"benmrosek" : "cheetah11",
 if (password == valid_logins.get(username) and enter == True):
     # calls the entirety of the optimization code and displays it if username
     # and password combo is valid by unpacking the multiple returns
+    wait = st.text("Est Wait Time: 30s")
     thing = whole()
     dF1, dF2, dF3 = thing
     explain1 = st.text("Lineup 1")
