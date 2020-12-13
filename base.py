@@ -21,7 +21,7 @@ def whole():
     # reads in csv of salaries and transfers data to DataFrame
     def create_salaries_df(df):
         # creates file path
-        file = (r"C:/home/ben_m//" + str(year_num) + "-"
+        file = ("/home/ben_m/" + str(year_num) + "-"
                 + str(year_num + 1) + "Week" + str(week_num) + "FD.csv")
         
         # creates table of file path data
