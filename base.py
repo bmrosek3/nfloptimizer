@@ -486,6 +486,9 @@ def whole():
                 position_change = {"A.J. Green" : "WR",
                                    "Taysom Hill" : "QB"}
                 
+                #get rid of this later
+                combo_temp = combo_temp[combo_temp["Name"] != "Randall Cobb"]
+                
                 # manually fixing their positions
                 for index, row in combo_temp.iterrows():
                     combo_temp.at[index, "Position"] = position_change.get(
