@@ -10,7 +10,7 @@ def whole():
     import pulp
     
     # variables declared for week and year number for reuse throughout code
-    week_num = 16
+    week_num = 17
     year_num = 20
     
     #################################### Setup ####################################
@@ -485,9 +485,6 @@ def whole():
                 # dictionary and duplicated players correct positions
                 position_change = {"A.J. Green" : "WR",
                                    "Taysom Hill" : "QB"}
-                
-                #get rid of this later
-                combo_temp = combo_temp[combo_temp["Name"] != "Randall Cobb"]
                 
                 # manually fixing their positions
                 for index, row in combo_temp.iterrows():
