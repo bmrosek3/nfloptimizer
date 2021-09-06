@@ -277,35 +277,36 @@ def whole():
     ######### removes players that are listed twice in the wrong position #########
     
     # the holy bible of name modifications
-    holy_bible = {"Allen Robinson" : "Allen Robinson II",
+    holy_bible = {"Adrian Killins Jr." : "Adrian Killins",
+                  "Alex Armah Jr." : "Alex Armah",
+                  "Allen Robinson" : "Allen Robinson II", #ca
                   "Bruce Anderson" : "Bruce Anderson III",
-                  "CJ Ham" : "C.J. Ham",
                   "Chris Herndon IV" : "Chris Herndon",
-                  "D.J. Chark" : "DJ Chark Jr.",
+                  "D.J. Chark Jr." : "DJ Chark Jr.",
                   "D.J. Moore" : "DJ Moore",
                   "D.K. Metcalf" : "DK Metcalf",
                   "Darrell Henderson" : "Darrell Henderson Jr.",
                   "Darvin Kidsy" : "Darvin Kidsy Jr.",
-                  "Donald Parham" : "Donald Parham Jr.",
                   "Dwayne Haskins" : "Dwayne Haskins Jr.",
                   "Gary Jennings Jr." : "Gary Jennings",
                   "J.J. Arcega-Whiteside" : "JJ Arcega-Whiteside",
+                  "Jakeem Grant Sr." : "Jakeem Grant",
                   "Jeff Wilson" : "Jeff Wilson Jr.",
                   "John Ross" : "John Ross III",
                   "Karan Higdon" : "Karan Higdon Jr.",
-                  "Marvin Jones" : "Marvin Jones Jr.",
-                  "Melvin Gordon" : "Melvin Gordon III",
-                  "Mitch Trubisky" : "Mitchell Trubisky",
-                  "Phillip Dorsett" : "Phillip Dorsett II",
+                  "K.J. Hill Jr." : "K.J. Hill",
+                  "Patrick Mahomes II" : "Patrick Mahomes",
+                  "Phillip Walker" : "P.J. Walker",
+                  "Ray-Ray McCloud" : "Ray-Ray McCloud III",
+                  "Richie James Jr." : "Richie James",
                   "Robert Griffin" : "Robert Griffin III",
                   "Stanley Morgan Jr." : "Stanley Morgan",
                   "Steven Sims" : "Steven Sims Jr.",
                   "Tedd Ginn" : "Tedd Ginn Jr.",
                   "Todd Gurley" : "Todd Gurley II",
-                  "Wayne Gallman" : "Wayne Gallman Jr.",
-                  "Will Fuller" : "Will Fuller V",
-                  "Willie Snead" : "Willie Snead IV"}
-    
+                  "Victor Bolden Jr." : "Victor Bolden",
+                  "Will Fuller" : "Will Fuller V", #ca
+                  "Willie Snead" : "Willie Snead IV"} #ca    
     # modifies the names of the projections DataFrame to match with salaries
     def modify_names(df, pos):
         # iterates through each row of the name column
@@ -481,10 +482,6 @@ def whole():
                 # drops duplicated players to only keep one of them
                 combo_temp = combo.drop_duplicates(subset = ["Name"],
                                                    keep = "first", inplace = False)
-                
-                # dictionary and duplicated players correct positions
-                position_change = {"A.J. Green" : "WR",
-                                   "Taysom Hill" : "QB"}
                 
                 # manually fixing their positions
                 for index, row in combo_temp.iterrows():
