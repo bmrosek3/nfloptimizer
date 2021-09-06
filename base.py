@@ -482,12 +482,6 @@ def whole():
                 # drops duplicated players to only keep one of them
                 combo_temp = combo.drop_duplicates(subset = ["Name"],
                                                    keep = "first", inplace = False)
-                
-                # manually fixing their positions
-                for index, row in combo_temp.iterrows():
-                    combo_temp.at[index, "Position"] = position_change.get(
-                        combo_temp.at[index, "Name"],
-                        combo_temp.at[index, "Position"])
                     
         # returns the final DataFrame
         return combo_temp
