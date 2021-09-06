@@ -10,8 +10,8 @@ def whole():
     import pulp
     
     # variables declared for week and year number for reuse throughout code
-    week_num = 17
-    year_num = 20
+    week_num = 1
+    year_num = 21
     
     #################################### Setup ####################################
     ###############################################################################
@@ -42,7 +42,7 @@ def whole():
     # reads in fantasy pros projections and transfers data to DataFrame 
     def create_projection_df(df, pos):
         # creates url path
-        url = ("https://www.fantasypros.com/nfl/projections/" + pos + ".php")
+        url = ("https://www.fantasypros.com/nfl/projections/" + pos + ".php?week=" + str(week_num))
     
         # creates table out of url data
         raw_df = pd.read_html(url)[0]
