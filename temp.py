@@ -28,7 +28,7 @@ valid_logins = {"benmrosek" : "cheetah11",
 if (password == valid_logins.get(username) and enter == True):
     # calls the entirety of the optimization code and displays it if username
     # and password combo is valid by unpacking the multiple returns
-    wait = st.text("Est Wait Time: 30s")
+    wait = st.text("Est Wait Time: 10s")
     thing = whole()
     dF1, dF2, dF3 = thing
     explain1 = st.text("Lineup 1")
