@@ -22,7 +22,10 @@ valid_logins = {"benmrosek" : "cheetah11",
                 "willbrantley" : "allstar55",
                 "bhelms" : "He10232000",
                 "benreno18" : "utexas1",
-                "jakerussporter" : "91899189"}
+                "jakerussporter" : "91899189",
+                "admin" : "K4a27Bl",
+                "shanny" : "shanny",
+                "bsully43" : "capitals08"}
 
 # verifies username and password for access
 if (password == valid_logins.get(username) and enter == True):
