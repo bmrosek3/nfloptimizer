@@ -167,7 +167,7 @@ def whole():
                               "Seattle Seahawks" : "SEA",
                               "Tampa Bay Buccaneers" : "TB",
                               "Tennessee Titans" : "TEN",
-                              "Washington Redskins" : "WAS"}
+                              "Washington Football Team" : "WAS"}
             
             # inserts team name column for each defense
             df.insert(1, "Team", "")
