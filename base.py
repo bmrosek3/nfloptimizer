@@ -419,31 +419,31 @@ def whole():
             if (combo.at[index, "Position"] == "QB"):
                 # sets the tier column based on projected points / salary ratio(value)
                 # for qbs
-                if (value > (180 / divisor)):
+                if (value > (225 / divisor)):
                     combo.at[index, "Tier"] = "S"
-                elif (value > (175 / divisor)):
+                elif (value > (220 / divisor)):
                     combo.at[index, "Tier"] = "A+"
-                elif (value > (170 / divisor)):
+                elif (value > (215 / divisor)):
                     combo.at[index, "Tier"] = "A"
-                elif (value > (165 / divisor)):
+                elif (value > (210 / divisor)):
                     combo.at[index, "Tier"] = "A-"
-                elif (value > (160 / divisor)):
+                elif (value > (205 / divisor)):
                     combo.at[index, "Tier"] = "B+"
-                elif (value > (155 / divisor)):
+                elif (value > (200 / divisor)):
                     combo.at[index, "Tier"] = "B"
-                elif (value > (150 / divisor)):
+                elif (value > (195 / divisor)):
                     combo.at[index, "Tier"] = "B-"
-                elif (value > (145 / divisor)):
+                elif (value > (190 / divisor)):
                     combo.at[index, "Tier"] = "C+"
-                elif (value > (140 / divisor)):
+                elif (value > (185 / divisor)):
                     combo.at[index, "Tier"] = "C"
-                elif (value > (135 / divisor)):
+                elif (value > (180 / divisor)):
                     combo.at[index, "Tier"] = "C-"
-                elif (value > (130 / divisor)):
+                elif (value > (175 / divisor)):
                     combo.at[index, "Tier"] = "D+"
-                elif (value > (125 / divisor)):
+                elif (value > (170 / divisor)):
                     combo.at[index, "Tier"] = "D"
-                elif (value > (120 / divisor)):
+                elif (value > (165 / divisor)):
                     combo.at[index, "Tier"] = "D-"
                 else:
                     combo.at[index, "Tier"] = "F"
