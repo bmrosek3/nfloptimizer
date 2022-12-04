@@ -10,7 +10,7 @@ def whole():
     import pulp
     
     # variables declared for week and year number for reuse throughout code
-    week_num = 12
+    week_num = 13
     year_num = 22
     
     #################################### Setup ####################################
